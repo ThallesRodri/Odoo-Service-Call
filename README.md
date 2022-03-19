@@ -1,8 +1,11 @@
 # Odoo-Service-Call
+
 ###Odoo v14.0
+
 <a name="ancora"></a>
+
 *Chamado de Serviço (Português) (#ancora1)
-*Service Call (English)(#ancora2)
+*Service Call (English) (#ancora2)
 
 <a id="ancora1"></a>
 ##Chamado de Serviço
