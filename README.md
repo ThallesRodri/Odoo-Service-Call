@@ -2,12 +2,9 @@
 
 ### Odoo v14.0
 
-<a name="ancora"></a>
+* Chamado de Serviço (Português)
+* Service Call (English)
 
-* [Chamado de Serviço (Português)] (#ancora1)
-* [Service Call (English)] (#ancora2)
-
-<a id="ancora1"></a>
 ## Chamado de Serviço
 O módulo permite a criação de chamado de serviços para organização interna da empresa.
 
@@ -27,7 +24,6 @@ Cada chamado de serviço tem uma **barra de status**, ordenando em que estado el
 
 O código do módulo é aberto e livre para qualquer edição. 
 
-<a id="ancora2"></a>
 ## Service Call
 The module allows the creation of service calls for the company's internal organization.
 
