@@ -1,0 +1,5 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+acl_chamado,chamado.servico_perm,model_chamado_servico,,1,1,1,1
+acl_chamado,chamado.servico_perm,model_chamado_servico,group_chamados_attrs,1,1,1,1
+acl_tipo_serv,chamado.tipo_servico_perm,model_tipo_servico,,1,1,1,1
+acl_tipo_serv,chamado.tipo_servico_perm,model_tipo_servico,group_chamados_attrs,1,1,1,1

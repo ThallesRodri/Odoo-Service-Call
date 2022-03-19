@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id='chamado_servico_action' model='ir.actions.act_window'>
+        <field name="name">Chamado de Serviço</field>
+        <field name="res_model">chamado.servico</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <menuitem name="Chamado de Serviços" id="chamado_servico_base_menu" />
+    <menuitem name="Chamados" id="chamado_servico_menu" parent="chamado_servico_base_menu" action="chamado_servico_action" />
+
+    <record id="chamado_servico_view_form" model="ir.ui.view">
+        <field name="name">Chamado de Serviço Form</field>
+        <field name="model">chamado.servico</field>
+        <field name="arch" type="xml">
+            <form>
+                <header>
+                    <button name="fazerAberto" string='Em aberto' type="object" />
+                    <button name="fazerAnalise" string='Em análise' type="object" />
+                    <button name="fazerResolvido" string='Resolvido' type="object" />
+                    <button name="fazerSolucao" string='Sem Solução' type="object" />
+                    <button name="fazerCancelado" string='Cancelado' type="object" />
+                    <field name="status" widget="statusbar" />
+                </header>
+                <group>
+                    <group>
+                        <field name="funcionario" />    
+                        <field name="problema" />                    
+                    </group>
+                    <group>
+                        <field name="tipo_servico"/> 
+                        <field name="data_problema" />                       
+                        <field name="data_att" />                       
+                    </group>
+                </group>
+            </form>
+        </field>
+    </record>
+
+    <record id="chamado_servico_view_tree" model="ir.ui.view">
+        <field name="name">Chamado de Serviço Tree</field>
+        <field name="model">chamado.servico</field>
+        <field name="arch" type="xml">
+            <tree default_order="id desc">
+                <field name="funcionario" />
+                <field name="tipo_servico" />    
+                <field name="status" /> 
+                <!--field name="data_problema" /-->
+            </tree>
+        </field>
+    </record>
+
+    <record id="servico_view_search" model="ir.ui.view">
+        <field name="name">Chamado Servico Search</field>
+        <field name="model">chamado.servico</field>
+        <field name="arch" type="xml">
+            <search>
+                <field name="tipo_servico"/>
+                <field name="funcionario"/>
+                <field name="status"/>
+            </search>
+        </field>
+    </record>
+</odoo>
+
