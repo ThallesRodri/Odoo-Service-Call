@@ -4,8 +4,8 @@
 
 <a name="ancora"></a>
 
-* Chamado de Serviço (Português) (#ancora1)
-* Service Call (English) (#ancora2)
+* [Chamado de Serviço (Português)] (#ancora1)
+* [Service Call (English)] (#ancora2)
 
 <a id="ancora1"></a>
 ## Chamado de Serviço
